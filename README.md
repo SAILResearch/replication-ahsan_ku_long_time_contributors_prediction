@@ -1,8 +1,13 @@
-# Predicting Long-time Contributors with Knowledge Units - Supplemental Materials
+# Predicting long time contributors with knowledge units of programming languages: an empirical study
+
+## Abstract
+Long-time contributors (LTCs) are essential for the sustainability of open source software (OSS) projects, but unfortunately many developers leave early. Predicting potential LTCs early in their tenure allows project maintainers to effectively allocate resources and mentoring to enhance their development and retention. Prior study shows that developers are primarily motivated to join OSS projects by opportunities to learn and enhance their skills at different areas, including the aspects of programming languages. This motivation plays a crucial role in their continued engagement and contributions to projects. Mapping programming language expertise to developers and characterizing projects in terms of how they use programming languages can help identify developers who are more likely to become LTCs. However, prior studies on predicting LTCs do not consider programming language skills. Towards filling this gap, this paper reports an empirical study on the usage of knowledge units (KUs) of the Java programming language to predict LTCs. A KU is a cohesive set of key capabilities that are offered by one or more building blocks of a given programming language. We select 75 real-world actively maintained Java projects from GitHub. Next, we build a prediction model called KULTC, which leverages KU-based features along five different dimensions. To engineer these features, we detect and analyze KUs from the studied 75 Java projects (spanning a total of 353K commits and 168K pull requests) as well as 4,219 other Java projects in which the studied developers previously worked (spanning a total of 1.7M commits). We compare the performance of KULTC with the state-of-the-art model, which we call BAOLTC. Even though KULTC focuses exclusively on the programming language perspective, KULTC achieves a median AUC of at least 0.75 and significantly outperforms BAOLTC. Combining the features of KULTC with the features of BAOLTC results in an enhanced model (KULTC+BAOLTC) that significantly outperforms BAOLTC across different settings with a normalized AUC improvement of 16.5%. Our feature importance analysis with SHAP reveals that developer expertise in the studied project is the most influential feature dimension for predicting LTCs. Finally, we develop a cost-effective model (KULTC_DEV_EXP+BAOLTC) that significantly outperforms BAOLTC. These encouraging results can be helpful to researchers who wish to further study the developers’ engagement/retention to OSS projects or build models for predicting LTCs. Future work in this area should thus (i) consider KULTC as a baseline model and (ii) consider KU-based features in the design of models that predict LTCs.
+
 
 This repository contains the replication package for our manuscript:
-
 **"Predicting Long-time Contributors with Knowledge Units of Programming Languages: An Empirical Study"**
+
+
 
 ---
 
