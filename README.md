@@ -120,3 +120,17 @@ Each script will generate a `.csv` file containing the KU feature vector for the
   Run the following function inside the SHAP script:
   ```python
   generate_sk_rank_input_data()
+
+## Cite Our Work
+```bibtex
+@article{ahasanuzzaman2025predicting,
+  title={Predicting long time contributors with knowledge units of programming languages: an empirical study},
+  author={Ahasanuzzaman, Md and Oliva, Gustavo A and Hassan, Ahmed E},
+  journal={Empirical Software Engineering},
+  volume={30},
+  number={3},
+  pages={99},
+  year={2025},
+  publisher={Springer}
+}
+```
